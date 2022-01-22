@@ -85,7 +85,7 @@ namespace WinFormsApp1.classes
                 var client = new SmtpClient();
                 {
                     client.Connect("smtp.gmail.com", 465);
-                    client.Authenticate("thiago.conceicao@oliveiratrust.com.br", "tAman1993**");
+                    client.Authenticate("login", "senha");
 
                     client.Send(_message);
                     client.Disconnect(true);
